@@ -1,0 +1,170 @@
+/* ─── Page shell ────────────────────────────────────────────────── */
+.page {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+/* ─── Card ──────────────────────────────────────────────────────── */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px 36px;
+  animation: fadeUp 0.3s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ─── Header ────────────────────────────────────────────────────── */
+.brand {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #3b82d4;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2328;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #57606a;
+  margin: 0 0 28px;
+}
+
+/* ─── Form ──────────────────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.9375rem;
+  color: #1f2328;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  border-color: #3b82d4;
+  box-shadow: 0 0 0 3px rgba(59, 130, 212, 0.15);
+}
+
+.input.inputError {
+  border-color: #ef4444;
+}
+
+.input.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.fieldError {
+  font-size: 0.78rem;
+  color: #ef4444;
+  margin: 0;
+}
+
+/* ─── Submit button ─────────────────────────────────────────────── */
+.submitBtn {
+  width: 100%;
+  padding: 11px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3b82d4;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #2563b0;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─── API error banner ──────────────────────────────────────────── */
+.errorBanner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #b91c1c;
+}
+
+/* ─── Footer link ───────────────────────────────────────────────── */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #57606a;
+  margin-top: 20px;
+}
+
+.footerLink {
+  color: #3b82d4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .card {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+/**
+ * globals.css — Application-wide CSS reset
+ *
+ * Applied once in layout.js. Keeps every element's default margin/padding
+ * zeroed out and enforces border-box sizing so padding never expands elements
+ * beyond their declared width/height.
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Allow full-height layouts without extra scrollbars */
+html, body {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,55 @@
+/* ─── Feed wrapper ──────────────────────────────────────────────── */
+.feedWrapper {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: #f7f8fa;
+  padding: 32px 24px 64px;
+}
+
+/* 4-column grid on desktop */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 2 columns on tablet */
+@media (max-width: 900px) {
+  .feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 column on mobile */
+@media (max-width: 520px) {
+  .feed {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Empty / error states ──────────────────────────────────────── */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  padding: 32px 16px;
+}
+
+.emptyMsg {
+  font-size: 1rem;
+  color: #57606a;
+  text-align: center;
+}
+
+.errorMsg {
+  font-size: 0.95rem;
+  color: #b91c1c;
+  text-align: center;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
