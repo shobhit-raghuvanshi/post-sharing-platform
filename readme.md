@@ -1,4 +1,4 @@
-# FastAPI CRUD App
+# Postly - Post sharing platform
 
 A full-stack media-sharing web application with a **FastAPI** backend and a **Next.js** frontend. Users can register, log in, and create posts that contain an image or video with an optional caption.
 
