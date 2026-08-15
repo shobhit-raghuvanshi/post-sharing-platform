@@ -2,7 +2,13 @@
 
 A full-stack media-sharing web application with a **FastAPI** backend and a **Next.js** frontend. Users can register, log in, and create posts that contain an image or video with an optional caption.
 
-<video src="fastapi_nextjs_post_sharing_app.mp4" controls width="100%" muted></video>
+
+
+https://github.com/user-attachments/assets/8d12b039-d2f9-4efa-abac-aab805f53f31
+
+
+
+
 
 ---
 
